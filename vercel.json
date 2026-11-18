@@ -1,11 +1,9 @@
 {
   "rewrites": [
-    { "source": "/proxy", "destination": "/proxy.js" }
+    { "source": "/api/(.*)", "destination": "/amprem.js" },
+    { "source": "/", "destination": "/amprem.js" }
   ],
   "functions": {
-    "proxy.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
+    "amprem.js": { "maxDuration": 10 }
   }
 }
