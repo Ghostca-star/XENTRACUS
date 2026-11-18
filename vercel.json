@@ -1,9 +1,9 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/amprem.js" },
-    { "source": "/", "destination": "/amprem.js" }
+    { "source": "/api/(.*)", "destination": "/api/amprem.js" },
+    { "source": "/", "destination": "/api/amprem.js" }
   ],
   "functions": {
-    "amprem.js": { "maxDuration": 10 }
+    "api/amprem.js": { "maxDuration": 10 }
   }
 }
